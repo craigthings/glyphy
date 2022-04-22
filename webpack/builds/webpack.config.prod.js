@@ -5,7 +5,7 @@ const root = path.join(__dirname, "../../");
 module.exports = {
   mode: "production",
   entry: {
-    glyphy: path.join(root, "src", "glyphy"),
+    glyphy: path.join(root, "src", "build"),
   },
 
   output: {

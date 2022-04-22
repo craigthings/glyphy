@@ -1,4 +1,6 @@
 import './index.html';
+import glyphy from '../src/index';
+
 
 let text = "Brawny gods! ^Jim's  bird \nflocked up to\n quiz and\nget him.";
 let font = "https://fonts.gstatic.com/s/shadowsintolight/v9/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD_.woff";
@@ -73,7 +75,7 @@ function nodeForEachPolyfill() {
 }
 
 
-main();
+window.onload = main;
 
 
 

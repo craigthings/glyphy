@@ -7,7 +7,7 @@ module.exports = {
   devtool: "#source-map",
   entry: {
     demo: path.join(root, "demo", "demo"),
-    glyphy: path.join(root, "src", "glyphy"),
+    glyphy: path.join(root, "src", "build"),
   },
 
   output: {

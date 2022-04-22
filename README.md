@@ -1,5 +1,9 @@
 # 🖋 Gylphy
-Draw text as graphics using custom fonts
+Draw text as graphics using custom fonts.
+
+## API Documentation
+
+Under development. For now check out `./demo/demo.js` for usage.
 
 ## How to develop and build
 
@@ -8,14 +12,10 @@ npm run build:prod    # Build library for portable use.
 npm run dev    # Run the demo as a live dev server.
 ```
 
-## Analysis of bundle file weight
-
-```bash
-npm run build:dev -- --env.addons bundleanalyzer
-npm run build:production -- --env.addons bundleanalyzer
-```
-
 ## Version History
+
+#### v0.1.11
+- Converting to NPM package.
 
 #### v0.1.10
 - Bug fix for strokeWidth issue.
