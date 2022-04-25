@@ -32,7 +32,7 @@ let defaultStyles = {
 };
 
 module.exports = function (container, font, text, roundDecimal, customStyles) {
-  window.font = font;
+  // window.font = font;
   let styles = Object.assign(defaultStyles, customStyles);
   let hasDropShadow = (
     customStyles.dropshadowOffsetX ||
@@ -69,7 +69,7 @@ module.exports = function (container, font, text, roundDecimal, customStyles) {
   };
 
   const pxScale = convert.getScale(font, fontSizePx);
-  window.pxScale = pxScale;
+  // window.pxScale = pxScale;
   var result = computeLayout(font, text, style);
 
   let wordStarts = [];
@@ -101,7 +101,7 @@ module.exports = function (container, font, text, roundDecimal, customStyles) {
     let maskData = styles.maskRows ? generateMasks(result, pxScale, font, fontSizePx, styles) : '';    
     let pathData = generatePaths(result, pxScale, wordStarts, wordEnds, roundDecimal, styles.maskRows, maskData.ids);
 
-    window.result = result;
+    // window.result = result;
     // saved incase viewbox is needed: viewbox="0 0 ${result.width*pxScale} ${result.height*pxScale}"
     // TODO: handle 'bottom' and 'right' css values by using the computed height and width.
     let resultHeight = (result.height * pxScale) + (result.baseline * pxScale);
