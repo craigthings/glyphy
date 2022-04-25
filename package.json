@@ -1,9 +1,9 @@
 {
     "name": "glyphy",
-    "version": "0.1.12",
+    "version": "0.1.17",
     "description": "Draw text as SVG paths using custom fonts, no DOM required.",
     "license": "MIT",
-    "main": "./build/glyphy.min.js",
+    "main": "./src/index.js",
     "author": {
         "name": "Piotr Kowalski",
         "email": "piecioshka@gmail.com",

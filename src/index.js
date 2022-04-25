@@ -1,5 +1,5 @@
-import opentype from "opentype.js";
-import generateSVG from './generateSvg';
+const opentype = require("opentype.js");
+const generateSVG = require('./generateSvg');
 
 let glyphy = {
 	makeSVG: function(container, text, fontURL, styles, decimalRound){
@@ -28,7 +28,13 @@ let glyphy = {
 				resolve(svgData);
 			}
 		});
+	},
+	svgDataSync: function(text, fontRef, styles, decimalRound){
+		let font = opentype.parse(fontRef);
+		let svgData = generateSVG(null, font, text, decimalRound, styles);
+		return svgData;
 	}
+
 }
 
-export default glyphy;
+module.exports = glyphy;

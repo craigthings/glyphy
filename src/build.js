@@ -1,6 +1,7 @@
-import glyphy from "./index";
-import 'babel-polyfill';
+const glyphy = require("./index");
 
-// if(window) window.glyphy = glyphy;
+if(window) window.glyphy = glyphy;
 
-export default glyphy;
+// export default glyphy;
+
+module.exports = glyphy;

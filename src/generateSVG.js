@@ -1,9 +1,8 @@
-import computeLayout from 'opentype-layout';
+const computeLayout = require('opentype-layout');
 
-import parseUnit from 'parse-unit';
-import toSvg from './glyphToSvgPath';
-import convert from './convert';
-import { type } from 'os';
+const parseUnit = require('parse-unit');
+const toSvg = require('./glyphToSvgPath');
+const convert = require('./convert');
 
 let defaultStyles = {
   color: 'black',
@@ -32,7 +31,7 @@ let defaultStyles = {
   maskRows: false
 };
 
-export default function (container, font, text, roundDecimal, customStyles) {
+module.exports = function (container, font, text, roundDecimal, customStyles) {
   window.font = font;
   let styles = Object.assign(defaultStyles, customStyles);
   let hasDropShadow = (

@@ -1,4 +1,4 @@
-export default function getSvgPath (path, scale, offset, roundDecimal) {
+module.exports = function getSvgPath (path, scale, offset, roundDecimal) {
   return path.commands.map(function (command) {
     let s = scale || 1;
     let offsetX = offset.x;
