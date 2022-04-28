@@ -1,13 +1,13 @@
 {
     "name": "glyphy",
-    "version": "0.1.19",
+    "version": "0.1.20",
     "description": "Draw text as SVG paths using custom fonts, no DOM required.",
     "license": "MIT",
     "main": "./src/index.js",
     "author": {
-        "name": "Piotr Kowalski",
-        "email": "piecioshka@gmail.com",
-        "url": "https://piecioshka.pl"
+        "name": "Craig Albert",
+        "email": "me@craigalbert.com",
+        "url": "http://www.craigalbert.com"
     },
     "scripts": {
         "build": "npm run build:development",
@@ -33,7 +33,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/piecioshka/boilerplate-webpack-babel"
+        "url": "https://github.com/craigthings/glyphy/"
     },
     "dependencies": {
         "babel-polyfill": "^6.26.0",

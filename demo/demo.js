@@ -29,7 +29,6 @@ let styles = {
 	strokeWidth: '2px',
 	strokeOpacity: 0.5,
 	maskRows: true,
-	separateLetters: true,
 };
 
 function main() {
