@@ -29,6 +29,7 @@ let styles = {
 	strokeWidth: '2px',
 	strokeOpacity: 0.5,
 	maskRows: true,
+	separateLetters: true,
 };
 
 function main() {
@@ -58,7 +59,7 @@ function main() {
 		styles,
 		roundToDecimal
 	).then((svgData) => {
-		// console.log(svgData);
+		console.log(svgData);
 	});
 }
 

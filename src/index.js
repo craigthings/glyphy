@@ -16,7 +16,7 @@ let glyphy = {
 	svgData: function(text, fontRef, styles, decimalRound){
 		return new Promise((resolve, reject) => {
 			if(typeof fontRef === 'string') {
-				opentype.load(fontURL, function (err, font) {
+				opentype.load(fontRef, function (err, font) {
 					if (err) reject(err);		
 					
 					let svgData = generateSVG(null, font, text, decimalRound, styles);

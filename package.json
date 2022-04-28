@@ -1,6 +1,6 @@
 {
     "name": "glyphy",
-    "version": "0.1.18",
+    "version": "0.1.19",
     "description": "Draw text as SVG paths using custom fonts, no DOM required.",
     "license": "MIT",
     "main": "./src/index.js",

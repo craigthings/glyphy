@@ -28,7 +28,7 @@ let defaultStyles = {
   strokeLinecap: 'round', // butt, round, square
   strokeWidth: '0px',
   strokeOpacity: 1,
-  maskRows: false
+  maskRows: false,
 };
 
 module.exports = function (container, font, text, roundDecimal, customStyles) {
@@ -176,8 +176,8 @@ module.exports = function (container, font, text, roundDecimal, customStyles) {
         <defs>
         ${svgDropShadow}
         </defs>
-        <g class="text-container" ${containerStyles} ${svgStroke} fill="${styles.color}" ${svgStroke} ${svgTranslate}>${maskData.data} ${pathData}</g>
-        
+        <g class="text-container" ${containerStyles} ${svgStroke} fill="${styles.color}" ${svgTranslate}>${maskData.data} ${pathData}</g>
+        </g>
       </svg>
     `;
     // console.log(svgData);
