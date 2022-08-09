@@ -14,6 +14,9 @@ npm run dev    # Run the demo as a live dev server.
 
 ## Version History
 
+#### v0.1.21
+- Fixing issue where a case sensitive filename was causing issue on certain OSs
+
 #### v0.1.11
 - Converting to NPM package.
 

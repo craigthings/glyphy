@@ -1,5 +1,5 @@
 const opentype = require("opentype.js");
-const generateSVG = require('./generateSvg');
+const generateSVG = require('./generateSVG');
 
 let glyphy = {
 	makeSVG: function(container, text, fontURL, styles, decimalRound){
